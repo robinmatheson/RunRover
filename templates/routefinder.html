@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Route Finder</title>
+  <!-- links for fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
+
+  <!-- tab -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <title>RunRover</title>
+  
+  <!-- css -->
+  <link rel="stylesheet" href="static/stylesheet.css">
+  
 </head>
 <body>
+  <div id="container">
+    <div>
+        <h1> <img src="static/RunRover_Icon.png"> RunRover</h1>
+    </div>
+    <div style="text-align:center">
+        <button class="button" style="margin-right: 30px">TODO: Run Tracker</button>
+        <button class="button">TODO: Route Finder</button>
+    </div>
+  </div>
+
   <input type="text" id="start" placeholder="Starting Point">
   <input type="text" id="end" placeholder="Ending Point">
   <input type="number" id="distance" placeholder="Desired Distance (km)">
