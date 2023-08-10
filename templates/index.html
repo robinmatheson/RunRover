@@ -8,7 +8,8 @@
         <!-- tab -->
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <title>RunRover</title>
-
+        
+        <!-- css -->
         <style>
             body {
                 text-align: center;
@@ -24,16 +25,30 @@
                 font-size: 20px;
                 color: #2C5EA9;
             }
-            p span {
+            .outputtext {
                 font-family: 'Baloo 2';
                 font-size: 20px;
                 color: #FFFFFF;
                 background-color: #2C5EA9;
-                /* text-align: center; */
+                border-radius: 8px;
+                padding: 10px;
+                max-width: 350px;
+                margin: 1em auto 1em auto;
+            }
+            .button {
+                background-color: #62BDFF;
+                border: 0px;
+                border-radius: 8px;
+                color: #FFFFFF;
+                font-family: 'Baloo';
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
             }
             #container {
                 max-width: 720px;
-                margin: 0 auto 0 auto;;
+                margin: 0 auto 0 auto;
             }
         </style>
         
@@ -44,15 +59,15 @@
                 <h1> <img src="static/RunRover_Icon.png"> RunRover</h1>
             </div>
             <div style="text-align:center">
-                <button>TODO: Run Tracker</button>
-                <button>TODO: Route Finder</button>
+                <button class="button" style="margin-right: 30px">TODO: Run Tracker</button>
+                <button class="button">TODO: Route Finder</button>
             </div>
             <p>Easily track your runs using the table below.</p>
             <p>TODO: ~have the table here~</p>
             <p>Need help figuring out what to do on your next run?</p>
-            <button>TODO: Generate Run</button> 
-            <p> 
-                <span>  TODO: ~run suggestor output here~  </span>
+            <button class="button">TODO: Generate Run</button> 
+            <p class="outputtext">
+                TODO: ~run suggestor output here~
             </p>
         </div>
     </body>
