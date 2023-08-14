@@ -37,3 +37,11 @@ p {
     max-width: 720px;
     margin: 0 auto 0 auto;
 }
+#headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headline-img {
+    padding-right: 20px;
+}
