@@ -19,7 +19,7 @@ p {
     padding: 10px;
 }
 #container {
-    max-width: 720px;
+    max-width: 800px;
     margin: 0 auto 0 auto;
     align-items: center;
 }
@@ -36,10 +36,6 @@ p {
 }
 #headline-img {
     padding-right: 20px;
-}
-#headline-buttons {
-    text-align: center;
-    padding-bottom: 30px;
 }
 #clear {
     clear: right;
