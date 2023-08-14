@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="static/stylesheet.css">
 
         <!-- bootstrap -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         
     </head>
     <body>
@@ -23,23 +24,70 @@
                     <div id="headline-img">
                         <img src="static/RunRover_Icon.png"> 
                     </div>
-                    <h1>RunRover</h1>
+                    <div id="headline-text">
+                        RunRover
+                    </div>
                 </div>
             </div>
-            <div style="text-align:center">
+            
+            <div id="headline-buttons">
                 <button class="button" style="margin-right: 30px">TODO: Run Tracker</button>
                 <button class="button">TODO: Route Finder</button>
             </div>
+
             <p>Easily track your runs using the table below.</p>
-            <p>TODO: ~have the table here~</p>
 
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Activity Type</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Distance</th>
+                        <th>Avg. Pace</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Hill Run</td>
+                    <td>04/08/23</td>
+                    <td>36:09</td>
+                    <td>5.34km</td>
+                    <td>6:46</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Long Run</td>
+                    <td>07/08/23</td>
+                    <td>59:47</td>
+                    <td>8.01km</td>
+                    <td>7:28</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Short Run</td>
+                    <td>08/08/23</td>
+                    <td>23:02</td>
+                    <td>3.69km</td>
+                    <td>6:15</td>
+                    <td>2</td>
+                </tr>
+            </table>
 
+            <div style="float:right">
+                <button class="button">TODO: Add Run</button>
+            </div>
 
-            <p>Need help figuring out what to do on your next run?</p>
-            <button class="button">TODO: Generate Run</button> 
-            <p class="outputtext">
-                TODO: ~run suggestor output here~
-            </p>
+            <div>
+                <p id="clear">Need help figuring out what to do on your next run?</p>
+            </div>
+
+            <div style="text-align: center">
+                <button class="button">TODO: Generate Run</button> 
+                <p id="outputtext">
+                    TODO: ~run suggestor output here~
+                </p>
+            </div>
         </div>
     </body>
 </html>
