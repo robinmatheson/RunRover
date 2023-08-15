@@ -47,30 +47,17 @@
                         <th>Difficulty</th>
                     </tr>
                 </thead>
-                <!-- <tr>
-                    <td>Hill Run</td>
-                    <td>04/08/23</td>
-                    <td>36:09</td>
-                    <td>5.34km</td>
-                    <td>6:46</td>
-                    <td>5</td>
-                </tr>
+                <!-- for loop to add database entries to table -->
+                {% for run in runs %}
                 <tr>
-                    <td>Long Run</td>
-                    <td>07/08/23</td>
-                    <td>59:47</td>
-                    <td>8.01km</td>
-                    <td>7:28</td>
-                    <td>3</td>
+                    <td>{{ run.type }}</td>
+                    <td>{{ run.date }}</td>
+                    <td>{{ run.time }}</td>
+                    <td>{{ run.distance }}km</td>
+                    <td>{{ run.pace }}</td>
+                    <td>{{ run.difficulty }}</td>
                 </tr>
-                <tr>
-                    <td>Short Run</td>
-                    <td>08/08/23</td>
-                    <td>23:02</td>
-                    <td>3.69km</td>
-                    <td>6:15</td>
-                    <td>2</td>
-                </tr> -->
+                {% endfor %}
             </table>
 
             <div style="float:right">

@@ -17,9 +17,6 @@ app.config.from_object(Config)
 
 db.init_app(app)
 
-# with app.app_context():
-#     db.reflect()
-
 class Run(db.Model):
     __tablename__ = 'runs'
     id = db.Column(db.Integer, primary_key=True)
@@ -34,7 +31,6 @@ class Run(db.Model):
         return 'f<{self.run_type}, {self.date}>'
 
 #routes
-
 @app.route('/')
 # to test the database connection
 # def testdb():
@@ -48,24 +44,9 @@ class Run(db.Model):
 #         return hed + error_text
         
 def index():
-    try:
-        runs = db.session.execute(db.select(Run)
-            .order_by(Run.date)).scalars()
-
-        run_text = '<ul>'
-        for run in runs:
-            run_text += '<li>' + run.type + ', ' + str(run.date) + '</li>'
-        run_text += '</ul>'
-        return run_text
-    except Exception as e:
-        # e holds description of the error
-        error_text = "<p>The error:<br>" + str(e) + "</p>"
-        hed = '<h1>Something is broken.</h1>'
-        return hed + error_text
-
-
-    # runs = Run.query.all()
-    # return render_template('index.html')
+    runs = db.session.execute(db.select(Run)
+        .order_by(Run.date)).scalars()
+    return render_template('index.html', runs = runs)
 
 if __name__ == "__main__":
     app.run(debug=True)
