@@ -44,8 +44,7 @@ class Run(db.Model):
 #         return hed + error_text
         
 def index():
-    runs = db.session.execute(db.select(Run)
-        .order_by(Run.date)).scalars()
+    runs = Run.query.all()
     return render_template('index.html', runs = runs)
 
 if __name__ == "__main__":
