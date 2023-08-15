@@ -9,14 +9,15 @@ import pymysql
 
 from config import Config
 
+# SQLAlchemy instance
 db = SQLAlchemy()
-
+# initialize Flask app
 app = Flask(__name__)
-
+# configure app with (hidden) SQLAlchemy Database URI
 app.config.from_object(Config)
-
 db.init_app(app)
 
+# model for run
 class Run(db.Model):
     __tablename__ = 'runs'
     id = db.Column(db.Integer, primary_key=True)
