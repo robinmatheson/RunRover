@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- page with form to add a run -->
 
 {% extends 'base.html' %}
 
@@ -36,7 +37,7 @@
             <div style="text-align: center">
                 <!-- distance -->
                 <label for="distance"><p>Distance:</p></label>
-                <input type="number" id="distance" name="distance" placeholder="km"/>
+                <input type="number" id="distance" name="distance" step="0.01" placeholder="km"/>
             </div>
 
             <div style="text-align: center">

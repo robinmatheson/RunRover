@@ -29,6 +29,14 @@ class Run(db.Model):
     pace = db.Column(db.String(8), nullable = False)
     difficulty = db.Column(db.Integer, nullable = False)
 
+    def __init__(self, type, date, time, distance, pace, difficulty):
+        self.type = type
+        self.date = date
+        self.time = time
+        self.distance = distance
+        self.pace = pace
+        self.difficulty = difficulty
+
     def __repr__(self):
         return 'f<{self.run_type}, {self.date}>'
 
@@ -58,9 +66,21 @@ def show_add_run_page():
 def add_run():
     # get data from add run form
     data = request.form
-    # store this data in db
 
-    runs = Run.query.all()
+    type = data['type']
+    date = data['date']
+    time = data['time']
+    distance = data['distance']
+    pace = data['pace']
+    difficulty = data['difficulty']
+
+    # create Run object
+    record = Run(type, date, time, distance, pace, difficulty)
+    
+    # store this data in db
+    db.session.add(record)
+    db.session.commit()
+
     return redirect('/')
 
 if __name__ == "__main__":
