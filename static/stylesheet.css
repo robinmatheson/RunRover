@@ -27,6 +27,17 @@ label {
     text-align: center;
     padding: 10px;
 }
+.delete-button {
+    background-color: #62BDFF;
+    border: 0px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Baloo';
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-align: center;
+    padding: 8px;
+}
 #container {
     max-width: 800px;
     margin: 0 auto 0 auto;

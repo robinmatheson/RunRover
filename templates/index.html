@@ -16,6 +16,7 @@
                     <th>Distance</th>
                     <th>Avg. Pace</th>
                     <th>Difficulty</th>
+                    <th> </th>
                 </tr>
             </thead>
             <!-- for loop to add database entries to table -->
@@ -27,12 +28,17 @@
                 <td>{{ run.distance }}km</td>
                 <td>{{ run.pace }}</td>
                 <td>{{ run.difficulty }}</td>
+                <td>
+                    <form action='/deleterun' method="POST">
+                        <input name="to-delete-id" type="hidden" value="{{ run.id }}"/>
+                        <button type="submit" class="delete-button">Delete</button>
+                    </form>
+                </td>
             </tr>
             {% endfor %}
         </table>
 
         <div style="float:right">
-            <!-- TODO -->
             <a href="/addrun" type="button" class="button"> + Add Run </a>
         </div>
 

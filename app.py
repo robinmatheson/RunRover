@@ -53,7 +53,7 @@ class Run(db.Model):
 #         hed = '<h1>Something is broken.</h1>'
 #         return hed + error_text      
 def home_page():
-    runs = Run.query.all()
+    runs = Run.query.order_by(Run.id).all()
     return render_template('index.html', runs = runs)
 
 # add run page
@@ -61,7 +61,7 @@ def home_page():
 def show_add_run_page():
     return render_template('addrun.html')
 
-# 
+# handles data from form to add run
 @app.route('/addrun/add', methods=['POST'])
 def add_run():
     # get data from add run form
@@ -81,6 +81,14 @@ def add_run():
     db.session.add(record)
     db.session.commit()
 
+    return redirect('/')
+
+# handles deleting a run
+@app.route('/deleterun', methods=['POST'])
+def delete_run():
+    id = request.form.get('to-delete-id')
+    db.session.delete(Run.query.get(id))
+    db.session.commit()
     return redirect('/')
 
 if __name__ == "__main__":
