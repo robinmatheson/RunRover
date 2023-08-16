@@ -1,4 +1,4 @@
-<img src="readme_media/RunRover_Banner.png"/>
+<img width="600" src="readme_media/RunRover_Banner.png"/>
 
 *RunRover* is a web app where users can track their running data in a functional and aesthetically pleasing user interface.
 Each run entry includes information about the activity type, date, time the activity took, distance, average pace, and difficulty.
@@ -33,6 +33,7 @@ Additionally, the creation of this app almost entirely required me to learn new 
 The current iteration of this project utilizes a locally hosted MySQL server, so it is not currently usable by others.
 
 Here is a use example: 
-<video controls>
-  <source src="readme_media/RunRover_UseExample.mp4" type="video/mp4">
-</video>
+
+<video width="500" src="https://github.com/robinmatheson/RunRover/assets/125790030/d9bda3a9-da4b-4a3f-b798-0d868d2c896d"/>
+
+
