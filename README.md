@@ -1,4 +1,4 @@
-<img width="485" alt="Screenshot 2023-08-16 at 10 58 01 AM" src="https://github.com/robinmatheson/RunRover/assets/125790030/9c4a82a6-fed4-4319-8053-1d91ae126b8f">
+<img src="readme_media/RunRover_Banner.png"/>
 
 *RunRover* is a web app where users can track their running data in a functional and aesthetically pleasing user interface.
 Each run entry includes information about the activity type, date, time the activity took, distance, average pace, and difficulty.
@@ -14,11 +14,11 @@ Additionally, the creation of this app almost entirely required me to learn new 
 ## Features
 - Add a run to the database with its associated data: activity type, date, time the activity took, distance, average pace, and difficulty (on a scale of 1 to 5).
 
-  <img width="500" alt="Screenshot 2023-08-16 at 11 01 29 AM" src="https://github.com/robinmatheson/RunRover/assets/125790030/f639c8ca-6138-416e-a3dd-0759f76ca34e">
+  <img width="500" src="readme_media/RunRover_AddRun.png">
 
 - View all of your runs in a clean and organized table.
 
-  <img width="500" alt="Screenshot 2023-08-16 at 11 00 18 AM" src="https://github.com/robinmatheson/RunRover/assets/125790030/d146fba3-0d14-438f-b989-f0c2e3b7a0a2">
+  <img width="500" src="readme_media/RunRover_HomePage.png">
 
 - Delete a run from the database.
 
@@ -31,5 +31,8 @@ Additionally, the creation of this app almost entirely required me to learn new 
 
 ## How to use
 The current iteration of this project utilizes a locally hosted MySQL server, so it is not currently usable by others.
-Here is a use example: https://github.com/robinmatheson/RunRover/assets/125790030/20cb09cc-1c8d-4927-8b00-220b6ba68483
 
+Here is a use example: 
+<video controls>
+  <source src="readme_media/RunRover_UseExample.mp4" type="video/mp4">
+</video>
