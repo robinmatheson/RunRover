@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, url_for
+from werkzeug.utils import redirect
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
@@ -42,15 +43,25 @@ class Run(db.Model):
 #         # e holds description of the error
 #         error_text = "<p>The error:<br>" + str(e) + "</p>"
 #         hed = '<h1>Something is broken.</h1>'
-#         return hed + error_text
-        
-def index():
+#         return hed + error_text      
+def home_page():
     runs = Run.query.all()
     return render_template('index.html', runs = runs)
 
+# add run page
 @app.route('/addrun')
 def show_add_run_page():
     return render_template('addrun.html')
+
+# 
+@app.route('/addrun/add', methods=['POST'])
+def add_run():
+    # get data from add run form
+    data = request.form
+    # store this data in db
+
+    runs = Run.query.all()
+    return redirect('/')
 
 if __name__ == "__main__":
     app.run(debug=True)
