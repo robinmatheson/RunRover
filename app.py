@@ -48,5 +48,9 @@ def index():
     runs = Run.query.all()
     return render_template('index.html', runs = runs)
 
+@app.route('/addrun')
+def show_add_run_page():
+    return render_template('addrun.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
