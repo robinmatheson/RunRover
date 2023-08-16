@@ -1,7 +1,5 @@
 <img width="485" alt="Screenshot 2023-08-16 at 10 58 01 AM" src="https://github.com/robinmatheson/RunRover/assets/125790030/9c4a82a6-fed4-4319-8053-1d91ae126b8f">
 
-*Note: The mysql branch is the iteration of this project that is currently completed.*
-
 *RunRover* is a web app where users can track their running data in a functional and aesthetically pleasing user interface.
 Each run entry includes information about the activity type, date, time the activity took, distance, average pace, and difficulty.
 The table is connected to a database that stores the data and reflects any changes made, like adding and deleting a run.
@@ -32,6 +30,6 @@ Additionally, the creation of this app almost entirely required me to learn new 
 - Use a machine learning tool to suggest your next run that is sufficiently challenging to ensure progressive overload given your previous running data.
 
 ## How to use
-The current iteration of this project (on the mysql branch) utilizes a locally hosted MySQL server, so it is not currently usable by others.
+The current iteration of this project utilizes a locally hosted MySQL server, so it is not currently usable by others.
 Here is a use example: https://github.com/robinmatheson/RunRover/assets/125790030/20cb09cc-1c8d-4927-8b00-220b6ba68483
 
