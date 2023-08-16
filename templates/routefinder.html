@@ -20,7 +20,7 @@
   <button onclick="calculateRoute()">Calculate Route</button>
   <div id="map" style="height: 400px;"></div>
   <div id="directions-panel"></div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUN9DWK3HWyX9M63TVztHgyM8K4pFyjPI&libraries=places"></script>
+  <script src="GOOGLEMAPS_API_URL"></script>
   <script>
     var map;
     var directionsService;
@@ -65,6 +65,6 @@
       });
     }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUN9DWK3HWyX9M63TVztHgyM8K4pFyjPI&callback=initMap"></script>
+  <script async defer src="GOOGLEMAPS_API_URL"></script>
 {% endblock %}
 </html>

@@ -8,14 +8,14 @@ import mysql.connector
 import os
 import pymysql
 
-from config import Config
+from config_SQLA import Config_SQLA
 
 # SQLAlchemy instance
 db = SQLAlchemy()
 # initialize Flask app
 app = Flask(__name__)
 # configure app with (hidden) SQLAlchemy Database URI
-app.config.from_object(Config)
+app.config.from_object(Config_SQLA)
 db.init_app(app)
 
 # model for run
@@ -99,6 +99,10 @@ def delete_run():
 
     # redirect to home page
     return redirect('/')
+
+@app.route('/routefinder')
+def route_finder():
+    return render_template('routefinder.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

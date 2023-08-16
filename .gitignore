@@ -1,4 +1,6 @@
-config.py
+config_SQLA.py
+config_GMAPI.py
+private.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
