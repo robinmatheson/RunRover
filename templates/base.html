@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- links for fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
+
+        <!-- tab -->
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <title>RunRover</title>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="static/stylesheet.css">
+
+        <!-- bootstrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div id="container">
+            <div>
+                <div id="headline">
+                    <div id="headline-img">
+                        <img src="static/RunRover_Icon.png"> 
+                    </div>
+                    <div id="headline-text">
+                        RunRover
+                    </div>
+                    <!-- TODO -->
+                    <button class="button" style="margin-left: 80px">Run Tracker</button>
+                    <!-- TODO -->
+                    <button class="button" style="margin-left: 30px">Route Finder</button>
+                </div>
+            </div>
+        {% block content %}
+        {% endblock %}
+        </div>
+    </body>
+</html>

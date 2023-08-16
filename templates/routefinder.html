@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- links for fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
 
-    <!-- tab -->
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <title>RunRover</title>
-  
-    <!-- css -->
-    <link rel="stylesheet" href="static/stylesheet.css">
-  
-  </head>
-<body>
+{% entends 'base.html' %}
+
+<html>
+{% block content %}
   <div id="container">
     <div>
         <h1> <img src="static/RunRover_Icon.png"> RunRover</h1>
@@ -76,5 +66,5 @@
     }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUN9DWK3HWyX9M63TVztHgyM8K4pFyjPI&callback=initMap"></script>
-</body>
+{% endblock %}
 </html>
