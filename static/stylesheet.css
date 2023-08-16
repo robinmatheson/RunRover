@@ -7,6 +7,15 @@ p {
     font-size: 20px;
     color: #2C5EA9;
 }
+input {
+    border: 3px solid #2C5EA9;
+    border-radius: 8px;
+    padding: 5px;
+    padding-left: 5px;
+}
+label {
+    padding-right: 10px;
+}
 .button {
     background-color: #62BDFF;
     border: 0px;
@@ -52,4 +61,11 @@ p {
     padding: 10px;
     max-width: 350px;
     margin: 1em auto 1em auto;
+}
+#addrun {
+    text-align: center;
+    font-family: 'Baloo';
+    font-size: 25px;
+    color: #2C5EA9;
+    font-weight: bold;
 }

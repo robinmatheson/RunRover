@@ -3,5 +3,58 @@
 {% extends 'base.html' %}
 
 <html>
-    
+    {% block content %}
+        <p id="addrun">Add a run:</p>
+        <form id="form">
+            <div style="text-align: center">
+                <!-- activity type -->
+                <label for="type"><p>Activity Type:</p></label>                
+                <input list="activity-types" id="type" name="type" autofocus/>
+                <datalist id="activity-types">
+                    <option value="Base Run"></option>
+                    <option value="Long Run"></option>
+                    <option value="Short Run"></option>
+                    <option value="Hill Run"></option>
+                    <option value="Tempo Run"></option>
+                    <option value="Speed Run"></option>
+                    <option value="Recovery Run"></option>
+                </datalist>
+            </div>
+
+            <div style="text-align: center">
+                <!-- date -->
+                <label for="date"><p>Date:</p></label>
+                <input type="text" id="date" name="date" placeholder="YYYY-MM-DD"/>
+            </div>
+
+            <div style="text-align: center">
+                <!-- time -->
+                <label for="time"><p>Time:</p></label>
+                <input type="text" id="time" name="time" placeholder="hh:mm:ss"/>
+            </div>
+
+            <div style="text-align: center">
+                <!-- distance -->
+                <label for="distance"><p>Distance:</p></label>
+                <input type="number" id="distance" name="distance" placeholder="km"/>
+            </div>
+
+            <div style="text-align: center">
+                <!-- average pace -->
+                <label for="pace"><p>Average Pace:</p></label>
+                <input type="text" id="pace" name="pace" placeholder="hh:mm:ss"/>
+            </div>
+
+            <div style="text-align: center">
+                <!-- difficulty -->
+                <label for="difficulty"><p>Difficulty (between 1 and 5):</p></label>
+                <input type="number" id= "difficulty" name="difficulty" min="1" max="5"/>
+            </div>
+
+            <div style="text-align: center">
+                <!-- submit button -->
+                <input type="submit" name="submit" class="button"/>
+            </div>
+        </form>
+    {% endblock %}
 </html>
