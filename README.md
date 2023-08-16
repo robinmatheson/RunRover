@@ -11,7 +11,7 @@ behind a paywall. Now, I want to expand that by including other functionalities 
 finder that takes a starting point, ending point, and distance as input and suggests a run that meets those criteria, and a tool that
 uses machine learning and your previous run data to suggest your next run such that it is sufficiently challenging for athletic improvement.
 
-Additionally, the creation of this app almost entirely required me to learn new languages and frameworks. Taking my experience in Python and VSCode (among other languages and tools) I self-taught HTML, CSS, SQL, MySQL, Flask, Flask-SQLAlchemy, and Bootstrap and applied them to this personal project. 
+Additionally, the creation of this app almost entirely required me to learn new languages and frameworks. Taking my experience in Python and VSCode (among other languages and tools) I self-taught HTML, CSS, SQL, MySQL, Flask, Flask-SQLAlchemy, and Bootstrap and applied them to this personal project. I built this project from design to implementation, and I used Figma to better plan out what I wanted my app to look like (which you can view [here](https://www.figma.com/file/Na66RDS9MTSpz1VRPwxOLB/RunRover?type=design&node-id=0%3A1&mode=design&t=SQcPYoABqkfsXPWd-1)).
 
 ## Features
 - Add a run to the database with its associated data: activity type, date, time the activity took, distance, average pace, and difficulty (on a scale of 1 to 5).
