@@ -53,7 +53,7 @@ class Run(db.Model):
 #         hed = '<h1>Something is broken.</h1>'
 #         return hed + error_text      
 def home_page():
-    runs = Run.query.order_by(Run.id).all()
+    runs = Run.query.all()
     return render_template('index.html', runs = runs)
 
 # add run page
