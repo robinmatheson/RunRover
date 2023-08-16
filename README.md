@@ -32,7 +32,7 @@ Additionally, the creation of this app almost entirely required me to learn new 
 ## How to use
 The current iteration of this project utilizes a locally hosted MySQL server, so it is not currently usable by others.
 
-Here is a use example: 
+*Here is a use example: *
 
 <video width="500" src="https://github.com/robinmatheson/RunRover/assets/125790030/d9bda3a9-da4b-4a3f-b798-0d868d2c896d"/>
 
